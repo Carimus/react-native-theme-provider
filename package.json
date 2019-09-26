@@ -1,6 +1,6 @@
 {
     "name": "@carimus/react-native-theme-provider",
-    "version": "1.0.0",
+    "version": "0.0.0-development",
     "description": "A wrapper around @callstack/react-theme-provider with some RN-specific goodies.",
     "license": "MIT",
     "main": "index.js",
