@@ -27,7 +27,8 @@
     "keywords": [
         "react",
         "react-native",
-        "theming"
+        "theme",
+        "provider"
     ],
     "husky": {
         "hooks": {
