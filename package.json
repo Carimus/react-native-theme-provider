@@ -8,7 +8,7 @@
         "test": "jest --passWithNoTests",
         "test:watch": "jest --watch",
         "lint": "eslint '{*,{src,docs}/**/*,__{tests,mocks}__/**/*}.{js,jsx}' || true",
-        "pretty": "prettier --write '{*,{src,docs}/**/*,__{tests,mocks}__/**/*}.{json,md,yml,js,jsx}'",
+        "pretty": "prettier --write '{*,{src,docs,.github}/**/*,__{tests,mocks}__/**/*}.{json,md,yml,js,jsx}'",
         "fixcode": "yarn run pretty",
         "semantic-release": "semantic-release",
         "release": "yarn run semantic-release",
@@ -39,7 +39,7 @@
             "eslint",
             "git add"
         ],
-        "{*,{src,docs}/**/*,__{tests,mocks}__/**/*}.{json,md,yml}": [
+        "{*,{src,docs,.github}/**/*,__{tests,mocks}__/**/*}.{json,md,yml}": [
             "prettier --write",
             "git add"
         ]
