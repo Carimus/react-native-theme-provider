@@ -1,0 +1,21 @@
+name: CI/CD
+on: push
+
+jobs:
+    test-and-release:
+        name: Test and Release
+        runs-on: ubuntu-latest
+        steps:
+            # Checkout the repo at the push ref
+            - uses: actions/checkout@v1
+            # Checkout
+            - name: Install
+              run: yarn
+            - name: Test
+              run: yarn test
+            - name: Release
+              if: github.ref == 'master' # Only release on pushes to master
+              run: yarn run release-ci
+              env:
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

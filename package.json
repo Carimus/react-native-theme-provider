@@ -18,10 +18,7 @@
     "bugs": {
         "url": "https://github.com/Carimus/react-native-theme-provider/issues"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Carimus/react-native-theme-provider.git"
-    },
+    "repository": "https://github.com/Carimus/react-native-theme-provider",
     "homepage": "https://github.com/Carimus/react-native-theme-provider#readme",
     "private": false,
     "keywords": [
