@@ -14,7 +14,7 @@ jobs:
             - name: Test
               run: yarn test
             - name: Release
-              if: github.ref == 'master' # Only release on pushes to master
+              if: github.ref == 'refs/heads/master' # Only release on pushes to master
               run: yarn run release-ci
               env:
                   GH_TOKEN: ${{ secrets.GH_TOKEN }}
